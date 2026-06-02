@@ -1,0 +1,47 @@
+/* Variables */
+
+:root {
+  --color-primary: #f06292;
+  --color-background: #0f1117;
+  --color-surface: #1c1f2e;
+  --color-text: #e8eaf0;
+  --colot-text-muted: #9094a8;
+  --color-border: #2a2d3e;
+}
+
+/* Reset and base */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+
+/* Header */
+
+.header {
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  text-align: center;
+  padding: 32px 20px;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  letter-spacing: -1px;
+}
+
+.tagLine {
+  font-size: 0.9rem;
+  color: var(--colot-text-muted);
+  margin-top: 6px;
+}

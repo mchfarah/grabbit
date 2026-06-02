@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grabbit</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">Grabbit</h1>
+      <p class="tagLine">Shop smart, save time.</p>
+    </header>
+
+    <main class="content">
+      <form class="addItemForm">
+        <input type="text" id="itemName" placeholder="Item Name..." />
+        <input
+          type="number"
+          id="itemQuantity"
+          placeholder="Amount"
+          min="1"
+          value="1"
+        />
+
+        <select id="itemCategory">
+          <option value="fruits">Fruits & Vegetables</option>
+          <option value="dairy">Dairy</option>
+          <option value="meat">Meat & Fish</option>
+          <option value="bakery">Bakery</option>
+          <option value="beverages">Beverages</option>
+          <option value="cleaning">Cleaning</option>
+          <option value="beauty">Beauty</option>
+          <option value="other">Other</option>
+        </select>
+
+        <button type="submit">Add</button>
+      </form>
+
+      <div class="filterButtons">
+        <button class="filterBtn active" data-filter="all">All</button>
+        <button class="filterBtn" data-filter="fruits">
+          Fruits & Vegetables
+        </button>
+        <button class="filterBtn" data-filter="dairy">Dairy</button>
+        <button class="filterBtn" data-filter="meat">Meat & Fish</button>
+        <button class="filterBtn" data-filter="bakery">Bakery</button>
+        <button class="filterBtn" data-filter="beverages">Beverages</button>
+        <button class="filterBtn" data-filter="cleaning">Cleaning</button>
+        <button class="filterBtn" data-filter="beauty">Beauty</button>
+        <button class="filterBtn" data-filter="other">Other</button>
+      </div>
+
+      <ul class="shoppingList" id="shoppingList"></ul>
+    </main>
+
+    <footer class="footer">
+      <p>Grabbit. Shop smart, save time.</p>
+      <a href="https://github.com/mchfarah" target="_blank">GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
