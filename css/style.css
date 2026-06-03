@@ -45,3 +45,61 @@ body {
   color: var(--colot-text-muted);
   margin-top: 6px;
 }
+
+/* Main */
+
+.content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Add item form */
+
+.addItemForm {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.addItemForm input,
+.addItemForm select {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.addItemForm input:focus,
+.addItemForm select:focus {
+  border-color: var(--color-primary);
+}
+
+#itamName {
+  flex: 1;
+  min-width: 180px;
+}
+
+#itemAmount {
+  width: 80px;
+}
+
+.addItemForm button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.addItemForm button:hover {
+  opacity: 0.85;
+}
