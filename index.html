@@ -13,6 +13,7 @@
     </header>
 
     <main class="content">
+      <!-- Form -->
       <form class="addItemForm">
         <input type="text" id="itemName" placeholder="Item Name..." />
         <input
@@ -22,7 +23,6 @@
           min="1"
           value="1"
         />
-
         <select id="itemCategory">
           <option value="fruits">Fruits & Vegetables</option>
           <option value="dairy">Dairy</option>
@@ -33,25 +33,27 @@
           <option value="beauty">Beauty</option>
           <option value="other">Other</option>
         </select>
-
         <button type="submit">Add</button>
       </form>
 
-      <div class="filterButtons">
-        <button class="filterBtn active" data-filter="all">All</button>
-        <button class="filterBtn" data-filter="fruits">
-          Fruits & Vegetables
-        </button>
-        <button class="filterBtn" data-filter="dairy">Dairy</button>
-        <button class="filterBtn" data-filter="meat">Meat & Fish</button>
-        <button class="filterBtn" data-filter="bakery">Bakery</button>
-        <button class="filterBtn" data-filter="beverages">Beverages</button>
-        <button class="filterBtn" data-filter="cleaning">Cleaning</button>
-        <button class="filterBtn" data-filter="beauty">Beauty</button>
-        <button class="filterBtn" data-filter="other">Other</button>
-      </div>
+      <!-- Sidebar and list -->
+      <div class="mainLayout">
+        <div class="filterButtons">
+          <button class="filterBtn active" data-filter="all">All</button>
+          <button class="filterBtn" data-filter="fruits">
+            Fruits & Vegetables
+          </button>
+          <button class="filterBtn" data-filter="dairy">Dairy</button>
+          <button class="filterBtn" data-filter="meat">Meat & Fish</button>
+          <button class="filterBtn" data-filter="bakery">Bakery</button>
+          <button class="filterBtn" data-filter="beverages">Beverages</button>
+          <button class="filterBtn" data-filter="cleaning">Cleaning</button>
+          <button class="filterBtn" data-filter="beauty">Beauty</button>
+          <button class="filterBtn" data-filter="other">Other</button>
+        </div>
 
-      <ul class="shoppingList" id="shoppingList"></ul>
+        <ul class="shoppingList" id="shoppingList"></ul>
+      </div>
     </main>
 
     <footer class="footer">
