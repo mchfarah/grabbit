@@ -1,7 +1,7 @@
 /* Variables */
 
 :root {
-  --color-primary: #fa5e92;
+  --color-primary: #fd3c6e;
   --color-background: #0f1117;
   --color-surface: #1c1f2e;
   --color-text: #e8eaf0;
@@ -24,46 +24,32 @@ body {
   min-height: 100vh;
 }
 
-/* Header content */
-
-.headerContent {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
-
-.headerLogo {
-  width: 300px;
-  height: 300px;
-}
-
 /* Header */
 
 .header {
   background-color: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
   text-align: center;
+  padding: 8px 20px;
 }
 
-.logo {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--color-primary);
-  letter-spacing: -1px;
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.tagLine {
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
-  margin-top: 6px;
+.headerLogo {
+  height: 220px;
+  width: auto;
 }
 
 /* Main content */
 
 .content {
   max-width: 800px;
-  margin: 40px auto;
+  margin: 20px auto;
   padding: 0 20px;
 }
 
@@ -210,7 +196,7 @@ body {
 .itemCategory {
   font-size: 0.75rem;
   color: var(--color-primary);
-  background-color: rgba(240, 98, 146, 0.1);
+  background-color: rgba(253, 60, 110, 0.1);
   padding: 3px 10px;
   border-radius: 20px;
   text-transform: capitalize;
